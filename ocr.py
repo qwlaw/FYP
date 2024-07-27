@@ -6,9 +6,9 @@ import io
 def perform_ocr_main(file):
     pytesseract.pytesseract.tesseract_cmd = r"C:\Users\ASUS\Documents\tesseract.exe"
     image = Image.open(file)
-    st.image(image, caption='Uploaded Image.', use_column_width=True)
-    st.write("")
-    st.write("Performing OCR...")
+    #st.image(image, caption='Uploaded Image.', use_column_width=True)
+    #st.write("")
+    #st.write("Performing OCR...")
 
     try:
         text = pytesseract.image_to_string(image)
